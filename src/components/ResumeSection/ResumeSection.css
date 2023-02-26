@@ -1,0 +1,24 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin: 26px 2rem;
+    padding: 21px 19%;
+    /* border: 1px solid #000000; */
+}
+
+.add-new-btn {
+    color: #222222 !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+}
+
+.add-new-btn:hover {
+    color: #fff !important;
+}
+
+@media (max-width: 636px) {
+    .section {
+        padding: 21px 10%;
+    }
+}

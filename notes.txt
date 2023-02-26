@@ -1,0 +1,78 @@
+Data for each candidate: -
+Name
+Short Bio
+Email
+Photo
+List of Education - Institute, Degree, Start Date, End Date, Description
+List of Work Exp. - Company, Role, Start Date, End Date, Description
+List of Achievements - Title, Date, Description
+
+Note: - Date has to be in format (month-year)
+
+Things learned: -
+CSS - 
+	gap, row-gap, column-gap		(to allot space between items in a flexbox, grid, etc.)
+	@media queries
+	max-width: fit-content; (preserves enough width of container as per the content and does not over-enlarge it if 100% width is allowed)
+React
+	bootstrap react
+	useRef Hook - 
+		designed to store reference of an HTML element on the web page
+		change to that HTML element using useRef hook does not lead to re-render of the component.	(p.o.d from useState)
+		NOTE: we can also store values in it just like useState (but with no re-render), but that's not what it was designed for.
+		const myRef = useRef();		//it returns an object with only one property - current
+		<input type="number" ref={myRef} />		//this stores the reference of input element inside myRef
+		Now using myRef.current , we can alter the HTML element without causing any re-render
+	useReducer Hook
+	map, filter, reduce
+	Polyfills
+		Piece of code that could run on older browsers as well and provide the necessary functionality which those older browsers would, otherwise, not support.
+		Not used exclusively right now due to performance issues and functionality enhancements.
+	Webpack
+
+Challenges: -
+1. month-picker issues
+2. logical design of components to satisfy many components
+3. photo storage issues
+		
+
+Components and sub components: -
+[x] 1. Header
+	Logo + Name				Import button	Export Button
+[x] 2. Basic Details Component
+	Upload Photo
+	Name
+	Short Bio
+	Email ID
+[x] 3. Section Component  (for education, work exp, achievements)
+	Show total elements along with name of each section tab (For eg: - Education (2))
+	Add new button - that opens appropriate dialog box
+	List of elements, where each element has: -
+		Education and Work Experience (Title + Start-End Date + Degree/Role + Description)
+		Achievements (Title + Date + Description)
+
+
+ToDos: -
+[x] Edit Profile
+[x] Resolve Photo issue
+[] Resolve Date issue
+[x] Edit an item
+[x] Remove an item
+[x] Add an item
+[] Import in JSON
+[] Export in JSON
+
+
+[-] react-date-picker
+[-] react-month-picker
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Learn different types of user Authentication and security techniques - OAuth, etc.
+
+
+React Router -
+1. Advantages = Client Side rendering rather than server side rendering (which is very fast and gives a smooth UX)
+2. BrowserRoute, Switch, Route (use "exact" in order to allow matching the path exactly), Links (acts as anchor tags)
+
+localStorage and sessionStorage

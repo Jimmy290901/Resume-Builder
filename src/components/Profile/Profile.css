@@ -1,0 +1,68 @@
+.profile {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 6rem;
+    column-gap: 64px;
+    row-gap: 30px;
+}
+
+/* .profile-photo {
+    background-image: url("../../assets/error_404.jpg");
+    background-size: contain;
+} */
+
+.profile-photo {
+    border-radius: 100%;
+    border-color: #EBEBEB;
+    min-width: 174px;
+    height: 174px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.profile-email {
+    font-size: 16px;
+    color: #717171;
+    font-weight: 600;
+}
+
+.profile-desc {
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.profile-name, .profile-email {
+    margin-bottom: 8px;
+}
+
+.grey-btn {
+    max-width: fit-content;
+    color: #717171 !important;
+    border: 1px solid #EBEBEB !important;
+}
+
+@media (max-width: 350px) {
+    .profile {
+        padding: 40px 4rem;
+    }
+}
+
+@media (max-width: 610px) {
+    .profile {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .details {
+        align-items: center;
+    }
+}

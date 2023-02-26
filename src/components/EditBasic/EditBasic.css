@@ -1,0 +1,81 @@
+.editBasicForm {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 64px;
+}
+
+.flex-row {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+}
+
+.upload-btn {
+    column-gap: 0.25rem;
+}
+
+.upload-btn:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 6rem;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.textGroup, .largeTextGroup {
+    flex-grow: 1;
+}
+
+.largeTextField {
+    height: 147px;
+}
+
+.textField {
+    height: 47px;
+}
+
+.photoContainer {
+    background-color: #F9F9F9;
+    border-radius: 100%;
+    border-color: #EBEBEB;
+    min-width: 174px;
+    height: 174px;
+    background-size: cover !important;
+}
+
+.blue-color {
+    background-color: #008392 !important;
+}
+
+.save-btn {
+    max-width: fit-content;
+    margin-left: 238px;
+}
+
+@media (max-width: 350px) {
+    .form-layout {
+        padding: 40px 4rem;
+    }
+}
+
+@media (max-width: 637px) {
+    .editBasicForm {
+        justify-content: center;
+    }
+}
+
+ @media (max-width: 880px) {
+    .save-btn {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,12 @@
+.dates-field {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dates-field div {
+    flex-grow: 1;
+}
+
+.set-column-gap {
+    column-gap: 1rem;
+}
